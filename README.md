@@ -30,7 +30,7 @@ The following steps are MacOS specific.
 
    `kyma install`
 
-   > NOTE: After installing remember to save your credentials for `Dex`. ![kyma-credentials](images/img01.png)
+   > NOTE: After installing remember to save your credentials for `Dex`. ![kyma-credentials](images/install/img01.png)
    >
    > The admin email is always the same, if for some reason you lost your password you can get it by running this command `kubectl get secret admin-user -n kyma-system -o jsonpath="{.data.password}" | base64 --decode`
 
@@ -48,4 +48,4 @@ The following steps are MacOS specific.
 
 2. Login to Dex.
 
-   ![login](images/img02.png)
+   ![login](images/install/img02.png)
