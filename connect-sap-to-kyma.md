@@ -53,7 +53,7 @@ This guide is based on the [Working with Local Instances of SAP Commerce Cloud a
 5. Patch the Application Registry to override Kyma defaults and disable TLS verification to ensure communication between Kyma and the SAP Commerce instance by running.
 
    ```bash
-   kubectl -n kyma-integration patch deployment application-registry --type json -p='[{"op": "add", "path": "/spec/template/spec/containers/0/args/-", "value":"--insecureSpecDownload=true"}]
+   kubectl -n kyma-integration patch deployment application-registry --type json -p='[{"op": "add", "path": "/spec/template/spec/containers/0/args/-", "value":"--insecureSpecDownload=true"}]'
    ```
 
    ![sap-kyma-6](images/sap-kyma/img06.png)
