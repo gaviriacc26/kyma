@@ -156,7 +156,7 @@ This guide is based on the [Working with Local Instances of SAP Commerce Cloud a
 
     ![sap-kyma-27](images/sap-kyma/img27.png)
 
-12. In the function you must add your source code and your dependencies. In this case after the function receives an event it sends a respose to [Webhook](webhook.site) with the data of the event.
+12. In the function you must add your source code and your dependencies. In this case after the function receives an event it sends a respose to [Webhook](https://webhook.site) with the data of the event.
 
     **Source:**
 
