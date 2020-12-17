@@ -92,10 +92,10 @@ This guide is based on the [Working with Local Instances of SAP Commerce Cloud a
    8.4. Select _Default_Template_ and follow the steps as shown in the images.
    ![sap-kyma-15](images/sap-kyma/img15.png)
 
-	8.6. Paste the URL you copied in step 8.2.
+   8.5. Paste the URL you copied in step 8.2.
    ![sap-kyma-16](images/sap-kyma/img16.png)
 
    ![sap-kyma-17](images/sap-kyma/img17.png)
 
-   8.5. Go back to your Kyma application and refresh the page. If you see all **9 Provided Services & Events** the pairing was successful.
+   8.6. Go back to your Kyma application and refresh the page. If you see all **9 Provided Services & Events** the pairing was successful.
    ![sap-kyma-18](images/sap-kyma/img18.png)
