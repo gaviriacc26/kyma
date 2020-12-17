@@ -99,3 +99,74 @@ This guide is based on the [Working with Local Instances of SAP Commerce Cloud a
 
    8.6. Go back to your Kyma application and refresh the page. If you see all **9 Provided Services & Events** the pairing was successful.
    ![sap-kyma-18](images/sap-kyma/img18.png)
+   
+   
+   
+9. Now you need to bind a namespace to your application
+
+    9.1. Click on "Create Binding"
+    ![sap-kyma-19](images/sap-kyma/img19.png)
+    
+    9.2. Fill the fields
+    ![sap-kyma-20](images/sap-kyma/img20.png)
+
+      > **NOTE:** You can use the default namespace   or create a new one.
+
+    Afther that in your namespace you should see one application bounded.
+
+    ![sap-kyma-21](images/sap-kyma/img21.png)
+    
+10. In the catalog of your namespace, you will see all the services offered by SAP, we need to create instances of the services that we want to provision to our functions or services. In this case we are going to use "CC Events v1" which helps you to trigger the SAP events and "CC OCC Commerce Webservices v2" which allows you to send http requests from Kyma to SAP.
+ 
+    10.1. Click on the service
+    ![sap-kyma-22](images/sap-kyma/img22.png)
+    
+    10.2. Click on "Add once" 
+    ![sap-kyma-23](images/sap-kyma/img23.png)
+    
+    10.3. Create with the default values
+    ![sap-kyma-24](images/sap-kyma/img24.png)
+    
+    Then your instances should look like this
+    ![sap-kyma-25](images/sap-kyma/img25.png)
+    
+11. Create a new function
+    
+    11.1. Click on "Create Function"
+    ![sap-kyma-26](images/sap-kyma/img26.png)
+    
+    11.2. Fill the fields
+    ![sap-kyma-27](images/sap-kyma/img27.png)
+    
+12. In the function you must add your source code and your dependencies. In this case after the function receives an event it sends a respose to [Webhook](webhook.site)  with the data of the event.
+
+    **Source:**
+    ![sap-kyma-28](images/sap-kyma/img28.png)
+    
+    **Dependencies:**
+    ![sap-kyma-29](images/sap-kyma/img29.png)
+
+       > **NOTE:** Remember save the changes on your code and wait until the status change to "RUNNING"
+
+    ![sap-kyma-30](images/sap-kyma/img30.png)
+    
+13. In the configuration tab you will see a section named "Event triggers" there you have to add a new event trigger and the function will be exectuted  when that event happens, in this case we are going to select the customer created event. 
+
+    13.1. Click on "Trigger an event"
+    ![sap-kyma-31](images/sap-kyma/img31.png)
+    
+    13.2. Select the event and create it
+    ![sap-kyma-32](images/sap-kyma/img32.png)
+
+14. SAP and Kyma are connected, now it is time to test. Go to SAP and perform the action according to your trigger event, in this case we are going to create a new customer.
+
+    ![sap-kyma-33](images/sap-kyma/img33.png)
+    
+    >**NOTE:** In the hybris console you should see something like this 
+
+    ![sap-kyma-34](images/sap-kyma/img34.png)
+    
+    Finally you can see the results on the url where you sent the response with the data of the event.
+    
+    ![sap-kyma-35](images/sap-kyma/img35.png)
+
