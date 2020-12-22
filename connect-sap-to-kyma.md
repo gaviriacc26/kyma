@@ -1,6 +1,6 @@
 # Connecting local SAP Commerce to local Kyma
 
-## Disclamer
+## Disclaimer
 
 This guide is based on the [Working with Local Instances of SAP Commerce Cloud and Project "Kyma"](https://www.sap.com/cxworks/article/468901527/working_with_local_instances_of_sap_commerce_cloud_and_project_kyma) article written by SAP. We do not claim ownership of any of the content taken from it. For more information please visit the official documentation.
 
